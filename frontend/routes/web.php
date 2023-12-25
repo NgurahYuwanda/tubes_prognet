@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DetailPenjualanController;
+use App\Http\Controllers\PenjualanController;
 use App\Http\Controllers\SatuanBarangController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/SatuanBarang', SatuanBarangController::class);
+Route::resource('/Barang', BarangController::class);
+Route::resource('/Penjualan', PenjualanController::class);
+Route::resource('/DetailPenjualan', DetailPenjualanController::class);
