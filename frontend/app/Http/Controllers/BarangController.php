@@ -45,7 +45,7 @@ class BarangController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('barang_edit');
     }
 
     /**
@@ -56,7 +56,7 @@ class BarangController extends Controller
      */
     public function edit($id)
     {
-        return view('barang_edit');
+        //
     }
 
     /**

@@ -45,7 +45,7 @@ class PenjualanController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('penjualan_edit');
     }
 
     /**

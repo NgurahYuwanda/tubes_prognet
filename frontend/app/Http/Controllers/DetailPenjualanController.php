@@ -23,7 +23,7 @@ class DetailPenjualanController extends Controller
      */
     public function create()
     {
-        //
+        return view('detail_create');
     }
 
     /**
@@ -45,7 +45,7 @@ class DetailPenjualanController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('detail_edit');
     }
 
     /**
