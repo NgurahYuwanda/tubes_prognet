@@ -48,6 +48,7 @@ class AuthApiController extends Controller
             $auth = Auth::user();
             $success['token'] = $auth->createToken('auth_token')->plainTextToken;
             $success['name'] = $auth->name;
+            $success['email'] = $auth->email;
 
             return response()->json([
                 'success' => true,
@@ -58,6 +59,7 @@ class AuthApiController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Cek Email dan Password lagi!',
+                'data' => null
             ]);
         }
     }
